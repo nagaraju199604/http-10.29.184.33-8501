@@ -8,7 +8,7 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.chains.question_answering import load_qa_chain
 from langchain_community.chat_models import ChatOpenAI
-OPENAI_API_KEY ="sk-proj-10EkPPQuQOYtqBxSHhkfT3BlbkFJY3thijj3zHOBHD8Sdd30"
+OPENAI_API_KEY ="sk-proj-aHhz1tv0D9lU1EZpWMxlT3BlbkFJfi8i4BQnrE1GXo3NK0oI"
 
 
 st.header("My first Chatbot")
