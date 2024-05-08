@@ -29,7 +29,7 @@ text_splitter = RecursiveCharacterTextSplitter(
         length_function=len
     )
 
-print(text_splitter.split_text(text))
+#print(text_splitter.split_text(text))
    
     
         
