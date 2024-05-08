@@ -33,5 +33,5 @@ if file is not None:
     #print(st.write(chunks))
     #embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
     #vector_store = FAISS.from_texts(chunks, embeddings)
-    #user_question = st.text_input("Type Your question here")
+    user_question = st.text_input("Type Your question here")
 
