@@ -5,6 +5,7 @@ import streamlit as st
 from PyPDF2 import PdfReader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain.vectorstores import FAISS
 OPENAI_API_KEY ="sk-proj-aHhz1tv0D9lU1EZpWMxlT3BlbkFJfi8i4BQnrE1GXo3NK0oI"
 
 
@@ -31,5 +32,5 @@ if file is not None:
     chunks=text_splitter.split_text(text)
     print(st.write(chunks))
     embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
-        
+    vector_store = FAISS.from_texts(chunks, embeddings)
 
