@@ -1,28 +1,11 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[1]:
-
-
-
-
-
-# In[2]:
 
 
 import streamlit as st
 from PyPDF2 import PdfReader
 
 
-OPENAI_API_KEY ="sk-proj-aHhz1tv0D9lU1EZpWMxlT3BlbkFJfi8i4BQnrE1GXo3NK0oI"
-
-# In[3]:
-
-
-
-
-
-# In[4]:
+#OPENAI_API_KEY ="sk-proj-aHhz1tv0D9lU1EZpWMxlT3BlbkFJfi8i4BQnrE1GXo3NK0oI"
 
 
 st.header("My first Chatbot")
@@ -38,7 +21,7 @@ if file is not None:
     text = ""
     for page in pdf_reader.pages:
         text += page.extract_text()
-        st.write(text)
+        print(st.write(text))
 
 
 
