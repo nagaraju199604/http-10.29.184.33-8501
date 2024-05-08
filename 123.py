@@ -22,14 +22,14 @@ if file is not None:
     for page in pdf_reader.pages:
         text += page.extract_text()
         #print(st.write(text))
-text_splitter = RecursiveCharacterTextSplitter(
+    text_splitter = RecursiveCharacterTextSplitter(
         separators="\n",
         chunk_size=1000,
         chunk_overlap=150,
         length_function=len
     )
-
-#print(text_splitter.split_text(text))
+    chunks=text_splitter.split_text(text)
+    print(st.write(chunks)
    
     
         
