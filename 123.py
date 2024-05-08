@@ -4,8 +4,8 @@
 import streamlit as st
 from PyPDF2 import PdfReader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-
-#OPENAI_API_KEY ="sk-proj-aHhz1tv0D9lU1EZpWMxlT3BlbkFJfi8i4BQnrE1GXo3NK0oI"
+from langchain.embeddings.openai import OpenAIEmbeddings
+OPENAI_API_KEY ="sk-proj-aHhz1tv0D9lU1EZpWMxlT3BlbkFJfi8i4BQnrE1GXo3NK0oI"
 
 
 st.header("My first Chatbot")
@@ -30,7 +30,6 @@ if file is not None:
     )
     chunks=text_splitter.split_text(text)
     print(st.write(chunks))
-   
-    
+    embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
         
 
