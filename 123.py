@@ -3,7 +3,7 @@
 
 import streamlit as st
 from PyPDF2 import PdfReader
-
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 #OPENAI_API_KEY ="sk-proj-aHhz1tv0D9lU1EZpWMxlT3BlbkFJfi8i4BQnrE1GXo3NK0oI"
 
