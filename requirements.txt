@@ -2,6 +2,3 @@ altair
 pandas
 streamlit
 PyPDF2
-langchain
-streamlit_jupyter
-langchain-community
