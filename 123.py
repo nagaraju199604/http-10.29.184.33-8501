@@ -6,7 +6,7 @@ from PyPDF2 import PdfReader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
-OPENAI_API_KEY ="sk-proj-aHhz1tv0D9lU1EZpWMxlT3BlbkFJfi8i4BQnrE1GXo3NK0oI"
+OPENAI_API_KEY ="sk-proj-10EkPPQuQOYtqBxSHhkfT3BlbkFJY3thijj3zHOBHD8Sdd30"
 
 
 st.header("My first Chatbot")
