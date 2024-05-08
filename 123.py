@@ -30,7 +30,7 @@ text_splitter = RecursiveCharacterTextSplitter(
     )
 
 chunks = text_splitter.split_text(text)
-    print(st.write(chunks))
+print(st.write(chunks))
    
     
         
