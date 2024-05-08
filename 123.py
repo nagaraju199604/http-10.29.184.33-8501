@@ -29,8 +29,7 @@ text_splitter = RecursiveCharacterTextSplitter(
         length_function=len
     )
 
-chunks = text_splitter.split_text(text)
-print(st.write(chunks))
+print(text_splitter.split_text(text))
    
     
         
